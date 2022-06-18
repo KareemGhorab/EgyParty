@@ -1,0 +1,77 @@
+:root{
+    --main-color: rgb(214,46,51);
+    --filter-color: rgba(112, 8, 104, 0.75);
+    --gray-color: rgb(65,70,88);
+    scroll-behavior: auto;
+}
+body, html{
+    font-family: Helvetica, sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+/* *********************************************************************** */
+nav{
+    z-index: 999;
+    left: 0;
+}
+nav .links{
+    padding-right: 100px !important;
+}
+nav a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+nav a, nav i{
+    cursor: pointer;
+    transition: color .3s;
+}
+nav a:hover, nav i:hover{
+    color: var(--main-color) !important;
+}
+/* *********************************************************************** */
+#home{
+    background-image: url(../images/party.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.filter{
+    background-color: var(--filter-color);
+}
+h1{
+    font-size: 60px;
+}
+/* *********************************************************************** */
+#duration{
+    background-image: url(../images/invitation.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+#duration .row{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* *********************************************************************** */
+.icon-container{
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, .4);
+    text-decoration: none;
+    margin-right: 15px;
+}
+.icon-container:hover{
+    background-color: var(--main-color);
+    color: white !important;
+    border: 1px solid var(--main-color);
+}
+/* *********************************************************************** */
+.bg-gray{
+    background-color: var(--gray-color);
+}
+.text-gray{
+    color: gray;
+}
+.cursor-ptr{
+    cursor: pointer;
+}
